@@ -13,7 +13,7 @@ struct NetflixCloneApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabbarView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
